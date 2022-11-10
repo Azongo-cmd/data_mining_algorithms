@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mining algorithms visualisation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h3> Bienvenue dans l'espace de visualisation des algorithmes de Data Mining </h3>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"> Association Rules</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Clustering
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Classification
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="data">
+
+            <form>
+                <div class="form-group row">
+                    <label for="inputfile" class="col-sm-4 col-form-label">Upload your data </label>
+                  <div class="col-sm-8">
+                    <input type="file" id="inputfile" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputminsup" class="col-sm-4 col-form-label">Mininum support ( % )</label>
+                  <div class="col-sm-8">
+                    <input type="number" id="inputminsup" class="form-control" >
+                  </div>
+                </div>
+                <div class="form-group row" id="metric">
+                    <label for="inputminsup" class="col-sm-4 col-form-label"> Metric</label>
+                  <div class="col-sm-8">
+                    <select class="form-select" name="" id="">
+                        <option value="0"> Confidence </option>
+                        <option value="1"> Lift </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row" id="min-conf">
+                    <label for="inputminconf" class="col-sm-4 col-form-label">Mininum confidence (%)</label>
+                  <div class="col-sm-8">
+                    <input type="number" id="inputminconf" class="form-control" >
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-12 submit-btn">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </div>
+                </div>
+              </form>
+        </div>
+
+        <div class="graph">
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.3/socket.io.min.js"></script>
+    <script src="socket.js"></script>
+</html>

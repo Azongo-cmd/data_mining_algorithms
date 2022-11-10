@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+header h3 {
+    padding-bottom: 20px;
+}
+
+.nav-item {
+    padding-left: 20px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+}
+.form-group {
+    padding-top: 10px;
+}
+
+.data form {
+    width: 50%;
+    padding: 10px;
+    border: outset;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+}
